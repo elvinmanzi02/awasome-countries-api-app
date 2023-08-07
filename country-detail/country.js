@@ -58,3 +58,8 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
       })
     }
   })
+
+  const themeChanger = document.querySelector(".theme-changer")
+  themeChanger.addEventListener('click', () => {
+    document.body.classList.toggle('dark')
+  })
